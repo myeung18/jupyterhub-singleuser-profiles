@@ -52,6 +52,7 @@ class SingleuserProfiles(object):
       self._gpu_mode = None
   
   def load_profiles(self, secret_name="jupyter-singleuser-profiles", filename=None, key_name="jupyterhub-singleuser-profiles.yaml", username=None):
+    print("loading user profile...")
     self.gpu_types = []
     self.profiles = []
     self.sizes = []
